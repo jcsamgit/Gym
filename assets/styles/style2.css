@@ -45,7 +45,6 @@ nav{
 .linksContent a:hover{
     color: rgb(40, 54, 50);
     text-shadow: 0 0 5px white;
-    /* transform: scale(2); */
 
 }
 /* hasta aca el navbar */
@@ -72,7 +71,6 @@ body{
     top: 64vw;
 }
 #boton{
-    /* background-color: yellow; */
     text-align: center;
     width: 12vw;
     border: 2px solid white;
@@ -105,7 +103,6 @@ body{
     display: none;
 }
 .contenidoSecundario p{
-    /* background-color: yellow; */
     text-align: center;
     height: 100%;
     padding: 5vw;
@@ -114,25 +111,18 @@ body{
     text-shadow: 0 0 9px blue;
     font-weight: bold;
     color: white;
-    /* margin: 10px; */
 
 }
 
 /* about us */
-/* .mainAbout{
-    height: 100vw;
-} */
+
 .sectionAbout{
     margin-bottom: 80px;
-    /* height: 100vw; */
 }
 .titleAbout, .subtitleAbout{
     text-align: center;
     text-shadow: 10px;
     margin: 35px;
-    /* text-shadow: 0px 0px 10px black; */
-    /* color: whitesmoke; */
-    /* text-shadow: 0 0 18px black; */
     color: rgb(52, 73, 66);
 
 }
@@ -147,7 +137,6 @@ body{
     font-size: 1.3rem;
     line-height: 1.4;
     height: 10vw;
-    /* background-color: yellow; */
 }
 .itemsContainer aside p{
     overflow: hidden;
@@ -201,8 +190,8 @@ body{
     width: 80vw;
     position: relative;
     bottom: 10vw;
-    /* height: 50vw; */
 }
+
 /* 2da parte de contact */
 .parrafos{
     display: inline-block;

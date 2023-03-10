@@ -27,13 +27,10 @@ nav{
     position: absolute;
     bottom: 0;
     height: 120px;
-    /* background-color: blueviolet; */
-    /* color: yellow; */
 
 }
 .linksContent a{
     text-decoration: none;
-    /* text-decoration-style: none; */
     text-align: center;
     color: #abf5dc;
     text-shadow: 0 0 10px silver;
@@ -51,28 +48,28 @@ nav{
 
 /* hasta aca el navbar */
 
-/* boton de about us  */
-.boton{
+/* boton de about us para usar en estilo 2*/
+#boton{
     display: none;
 }
 /* -------------------- */
 body{
-    background-color: rgb(18, 34, 29);
+    background-color: #def8f0;
 }
 
+/* home */
 main{
     margin-top: 20px;
-    /* background-image: ; */
 }
 .tituloPrincipal, h2{
     text-align: center;
     text-shadow: 10px;
     margin: 35px;
+    color: rgb(52, 73, 66);
 
 }
 h2{
-    text-shadow: 0px 0px 10px black;
-    color: rgb(188, 202, 166);
+    color: black;
 }
 .tituloPrincipal{
     font-size: 2.5rem;
@@ -83,6 +80,7 @@ h2{
 }
 .imagenPrincipal img{
     width: 80vw;
+    box-shadow: 0 0 5px 5px black;
 }
 .contenidoSecundario{
     margin: 10vw;
@@ -97,9 +95,9 @@ h2{
 .contenidoSecundario img{
     display: inline-block;
     width: 400px;
+    box-shadow: 0 0 5px 5px black;
 }
 .contenidoSecundario p{
-    border: 2px solid gold;
     padding: 25px;
     width: 400px;
     height: 250px;
@@ -107,29 +105,23 @@ h2{
     line-height: 2;
     display: inline-block;
     text-align: justify;
-    /* text-shadow: 13cap; */
+    border: 2px solid gold;
+    box-shadow: 0 0 5px 5px black;
 }
 
 /* about us */
 main{
     margin-bottom: 50px;
 }
-.sectionAbout{
-    /* text-align: center; */
-    
-    /* background-color: yellow; */
-}
+
 .itemsContainer{
     width: 80vw;
-    margin-left: 10vw;
+    margin-left: 15vw;
     margin-bottom: 25px;
     position: relative;
 }
 .itemsContainer figure{
     display: inline-block;
-    /* position: absolute; */
-    /* left: 0; */
-    
 }
 .itemsContainer img{
     width: 350px;
@@ -142,11 +134,14 @@ main{
     font-size: 1.3rem;
     line-height: 2;
     position: absolute;
-    right: 0;
+    right: 10vw;
     padding: 20px;
 }
 .itemsContainer aside p{
     margin-top: 30px;
+    border: 2px solid gold;
+    box-shadow: 0 0 5px 5px black;
+    height: 180px;
 }
 
 /* contact */
@@ -158,9 +153,9 @@ main{
 }
 .mainContact figure img{
     width: 100%;
+    box-shadow: 0 0 5px 5px black;
 }
 .parrafos{
-    /* width: 400px; */
     height: 110px;
     text-align: center;
     margin-top: 30px;
@@ -169,7 +164,6 @@ main{
 footer{
     position: relative;
     font-size: 1.3rem;
-    /* background-color: yellow; */
 }
 .email{
     position: absolute;
