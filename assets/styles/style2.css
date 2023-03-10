@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    height: 90px;
+    background-color: rgb(52, 73, 66);
+    position: relative;
+
+}
+.logoContent{
+    display: inline;
+    background-color: #abf5dc;
+    margin: 15px;
+    position: absolute;
+    right: 0;
+}
+.logoContent img{
+    height: 60px;
+    box-shadow: 0 0 10px 5px white;
+}
+.linksContent{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+    /* background-color: blueviolet; */
+    /* color: yellow; */
+
+}
+.linksContent a{
+    text-decoration: none;
+    text-align: center;
+    color: #abf5dc;
+    text-shadow: 0 0 10px silver;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 21px;
+    position: relative;
+    top: 55%;
+}
+.linksContent a:hover{
+    color: rgb(40, 54, 50);
+    text-shadow: 0 0 5px white;
+    /* transform: scale(2); */
+
+}
+/* hasta aca el navbar */
+body{
+    background-color: #def8f0;
+}
+
+.mainTitle{
+    width: 30vw;
+    text-align: center;
+    text-shadow: 0 0 8px white;
+    position: absolute;
+    left: 35vw;
+    top: 60vw;
+    font-size: 3vw;
+}
+.subtitle2{
+    text-align: center;
+    width: 20vw;
+    font-size: 2vw;
+    text-shadow: 0 0 8px white;
+    position: absolute;
+    left: 40vw;
+    top: 64vw;
+}
+#boton{
+    /* background-color: yellow; */
+    text-align: center;
+    width: 12vw;
+    border: 2px solid white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 9px 1px white;
+    position: absolute;
+    left: 43vw;
+    top: 69vw;
+    font-size: 1.5vw;
+
+}
+#boton:hover{
+    background-color: #abf5dc;
+}
+.imagenPrincipal img{
+    width: 92vw;
+    margin: 3vw;
+    box-shadow: 0 0 5px 5px black;
+}
+.contenidoSecundario{
+    width: 30vw;
+    height:20vw ;
+    background-image: url(../images/dumbbells.jpg);
+    background-size: contain;
+    margin-left: 35vw;
+    margin-bottom: 60px;
+    box-shadow: 0 0 5px 5px black;
+}
+.imagenSecundaria{
+    display: none;
+}
+.contenidoSecundario p{
+    /* background-color: yellow; */
+    text-align: center;
+    height: 100%;
+    padding: 5vw;
+    font-size: 1.5vw;
+    line-height: 1.5;
+    text-shadow: 0 0 9px blue;
+    font-weight: bold;
+    color: white;
+    /* margin: 10px; */
+
+}
+
+/* about us */
+/* .mainAbout{
+    height: 100vw;
+} */
+.sectionAbout{
+    margin-bottom: 80px;
+    /* height: 100vw; */
+}
+.titleAbout, .subtitleAbout{
+    text-align: center;
+    text-shadow: 10px;
+    margin: 35px;
+    /* text-shadow: 0px 0px 10px black; */
+    /* color: whitesmoke; */
+    /* text-shadow: 0 0 18px black; */
+    color: rgb(52, 73, 66);
+
+}
+.itemsContainer{
+    width: 25vw;
+    display: inline-block;
+    margin-left: 6vw;
+    height: 35vw;
+}
+.itemsContainer aside{
+    margin-top: 25px;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    height: 10vw;
+    /* background-color: yellow; */
+}
+.itemsContainer aside p{
+    overflow: hidden;
+    height: 20vw;
+    text-shadow: 0 0 9px blue
+}
+.itemsContainer figure img{
+    width: 25vw;
+    box-shadow: 0 0 5px 5px black;
+}
+
+
+/* contact */
+.mainContact{
+    margin-bottom: 80px;
+}
+.titleContact{
+    width: 30vw;
+    text-align: center;
+    text-shadow: 0 0 8px white;
+    position: absolute;
+    left: 35vw;
+    top: 30vw;
+    font-size: 3vw;
+    z-index: 5;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+.subtitleContact{
+    width: 30vw;
+    text-align: center;
+    text-shadow: 0 0 8px white;
+    position: absolute;
+    left: 35vw;
+    top: 34vw;
+    font-size: 2vw;
+    z-index: 5;
+    text-shadow: 0 0 5px black;
+    color: white;
+}
+.imgContainer{
+    background-color: yellow;
+    width: 80vw;
+    height: 30vw;
+    overflow: hidden;
+    margin: 5vw 10vw 5vw 10vw;
+    box-shadow: 0 0 5px 5px black;
+    
+}
+.imgContainer img{
+    width: 80vw;
+    position: relative;
+    bottom: 10vw;
+    /* height: 50vw; */
+}
+/* 2da parte de contact */
+.parrafos{
+    display: inline-block;
+    line-height: 1.5;
+    padding: 25px;
+    height: 200px;
+    width: 300px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-left: 20vw;
+}
+footer{
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    margin-left: 15vw;
+    width: 300px;
+
+}
+footer span{
+    display: block;
+    margin: 10px;
+}

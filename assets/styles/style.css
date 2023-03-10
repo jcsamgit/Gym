@@ -3,9 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.boton{
-    display: none;
-}
+
 
 nav{
     height: 90px;
@@ -38,15 +36,26 @@ nav{
     /* text-decoration-style: none; */
     text-align: center;
     color: #abf5dc;
-    text-shadow: 0 0 10px black;
+    text-shadow: 0 0 10px silver;
     font-weight: bold;
     margin: 10px;
     font-size: 21px;
     position: relative;
     top: 55%;
 }
+.linksContent a:hover{
+    color: rgb(40, 54, 50);
+    text-shadow: 0 0 5px white;
+
+}
 
 /* hasta aca el navbar */
+
+/* boton de about us  */
+.boton{
+    display: none;
+}
+/* -------------------- */
 body{
     background-color: rgb(18, 34, 29);
 }
