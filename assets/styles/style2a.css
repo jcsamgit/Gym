@@ -155,10 +155,16 @@ body{
 }
 
 /* CONTACT */
+
 .imgContainer{
     display: none;
 }
 .headerContact{
+    display: flex;
+    justify-content: center;
+    margin-top: 4vw;
+}
+.headerContainer{
     background-image: url(../images/image-1.jpg);
     background-position: center;
     width: 80vw;
@@ -167,33 +173,58 @@ body{
     flex-direction: column;
     justify-content: end;
     align-items: center;
-    /* margin: 5vw 10vw 5vw 10vw; */
     box-shadow: 0 0 5px 5px black;
+    text-align: center;
 }
 .titleContact, .subtitleContact{
     margin: 5px;
     text-shadow: 0 0 5px white;
 }
 .mainContact{
-    background-color: yellow;
+    display: flex;
+    justify-content: center;
+
+}
+.mainContainer{
+    /* background-color: yellow; */
     height: 25vw;
     width: 80vw;
-    margin: 5vw 10vw 5vw 10vw;
+    /* margin: 5vw 10vw 5vw 10vw; */
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
 }
 .parrafos{
-    /* display: inline-block; */
     line-height: 1.5;
     padding: 25px;
     height: 200px;
-    width: 300px;
+    width: 350px;
     font-size: 1.4rem;
     font-weight: bold;
-    /* margin-left: 15vw; */
+    border: 2px solid gold;
+    box-shadow: 0 0 5px 5px black;
+    text-align: center;
 }
 .contactDate{
+    height: 200px;
+    width: 350px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+    border: 2px solid gold;
+    box-shadow: 0 0 5px 5px black;
 }
+.contactDate a{
+    
+    text-decoration: none;
 
+}
+.email a:hover,.phone a:hover{
+    color: black;
+    text-shadow: 0 0 5px blue;
+}
