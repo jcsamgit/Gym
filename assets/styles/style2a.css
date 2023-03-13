@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    height: 90px;
+    background-color: rgb(52, 73, 66);
+    position: relative;
+
+}
+.logoContent{
+    display: inline;
+    background-color: #abf5dc;
+    margin: 15px;
+    position: absolute;
+    right: 0;
+}
+.logoContent img{
+    height: 60px;
+    box-shadow: 0 0 10px 5px white;
+}
+.linksContent{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+
+}
+.linksContent a{
+    text-decoration: none;
+    text-align: center;
+    color: #abf5dc;
+    text-shadow: 0 0 10px silver;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 21px;
+    position: relative;
+    top: 55%;
+}
+.linksContent a:hover{
+    color: rgb(40, 54, 50);
+    text-shadow: 0 0 5px white;
+
+}
+/* hasta aca el navbar */
+
+body{
+    background-color: #def8f0;
+}
+.imagenPrincipal{
+    display: none;
+}
+.headerImg{
+    width: 92vw;
+    height: 62vw;
+    margin: 2.9vw;
+    box-shadow: 0 0 5px black;
+    background-image: url(../images/guys.jpg);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: end;
+    align-items: center;
+}
+#boton{
+    text-decoration: none;
+    text-align: center;
+    width: 12vw;
+    border: 2px solid white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 9px 1px white;
+    font-size: 1.5vw;
+    color: #abf5dc;
+    margin: 10px;
+    font-weight: bold;
+}
+#boton:hover{
+    background-color: #abf5dc;
+    color: rgb(40, 54, 50);
+
+}
+.mainTitle2{
+    width: 30vw;
+    text-align: center;
+    text-shadow: 0 0 8px white;
+    font-size: 3vw;
+    margin: 5px;
+}
+.subtitle2{
+    margin: 5px;
+    text-align: center;
+    width: 20vw;
+    font-size: 2vw;
+    text-shadow: 0 0 8px white;
+}
+
+.contenidoSecundario{
+    width: 30vw;
+    height:20vw ;
+    background-image: url(../images/dumbbells.jpg);
+    background-size: contain;
+    margin-left: 35vw;
+    margin-bottom: 60px;
+    box-shadow: 0 0 5px 5px black;
+}
+.imagenSecundaria{
+    display: none;
+}
+.contenidoSecundario p{
+    text-align: center;
+    height: 100%;
+    padding: 5vw;
+    font-size: 1.5vw;
+    line-height: 1.5;
+    text-shadow: 0 0 9px blue;
+    font-weight: bold;
+    color: white;
+
+}
+
+/* ABOUT US*/ 
+.titleAbout, .subtitleAbout{
+    text-align: center;
+    text-shadow: 10px;
+    margin: 35px;
+    color: rgb(52, 73, 66);
+
+}
+.blockContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.itemsContainer{
+    width: 25vw;
+    display: inline-block;
+    height: 35vw;
+}
+.itemsContainer aside{
+    margin-top: 25px;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    height: 10vw;
+}
+.itemsContainer aside p{
+    overflow: hidden;
+    height: 20vw;
+    text-shadow: 0 0 9px blue
+}
+.itemsContainer figure img{
+    width: 25vw;
+    box-shadow: 0 0 5px 5px black;
+}
+
+/* CONTACT */
+.imgContainer{
+    display: none;
+}
+.headerContact{
+    background-image: url(../images/image-1.jpg);
+    background-position: center;
+    width: 80vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    /* margin: 5vw 10vw 5vw 10vw; */
+    box-shadow: 0 0 5px 5px black;
+}
+.titleContact, .subtitleContact{
+    margin: 5px;
+    text-shadow: 0 0 5px white;
+}
+.mainContact{
+    background-color: yellow;
+    height: 25vw;
+    width: 80vw;
+    margin: 5vw 10vw 5vw 10vw;
+    display: flex;
+
+}
+.parrafos{
+    /* display: inline-block; */
+    line-height: 1.5;
+    padding: 25px;
+    height: 200px;
+    width: 300px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    /* margin-left: 15vw; */
+}
+.contactDate{
+    display: flex;
+    flex-direction: column;
+}
+
