@@ -4,29 +4,31 @@
     box-sizing: border-box;
 }
 
-
 nav{
     height: 90px;
     background-color: rgb(52, 73, 66);
-    position: relative;
-
+    display: flex;
+    justify-content: space-between;
 }
 .logoContent{
-    display: inline;
-    background-color: #abf5dc;
     margin: 15px;
-    position: absolute;
-    right: 0;
+}
+@keyframes logoIntermitente{
+    50%{background-color: #abf5dc;}
 }
 .logoContent img{
     height: 60px;
     box-shadow: 0 0 10px 5px white;
+    animation-name: logoIntermitente;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-delay: 1s;
 }
 .linksContent{
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    height: 120px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    
 
 }
 .linksContent a{
@@ -37,15 +39,12 @@ nav{
     font-weight: bold;
     margin: 10px;
     font-size: 21px;
-    position: relative;
-    top: 55%;
 }
 .linksContent a:hover{
     color: rgb(40, 54, 50);
     text-shadow: 0 0 5px white;
 
 }
-
 /* hasta aca el navbar */
 
 /* boton de about us para usar en estilo 2*/
@@ -53,130 +52,233 @@ nav{
     display: none;
 }
 /* -------------------- */
+
+/* HOME */
 body{
     background-color: #def8f0;
 }
-
-/* home */
-main{
-    margin-top: 20px;
+.headerUno{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.tituloPrincipal, h2{
+.mainTitle, .subtitle{
     text-align: center;
-    text-shadow: 10px;
     margin: 35px;
     color: rgb(52, 73, 66);
 
 }
-h2{
+.subtitle{
     color: black;
 }
-.tituloPrincipal{
+.mainTitle{
     font-size: 2.5rem;
 
 }
-.imagenPrincipal{
+/* .mainImg{
     text-align: center;
-}
-.imagenPrincipal img{
-    width: 80vw;
+} */
+.mainImg img{
+    width: 90vw;
     box-shadow: 0 0 5px 5px black;
+
+}
+.main{
+    display: flex;
+    justify-content: center;
 }
 .contenidoSecundario{
-    margin: 10vw;
-    position: relative;
+    height: 35vw;
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.contenidoSecundario aside{
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    
-}
+
 .contenidoSecundario img{
-    display: inline-block;
     width: 400px;
     box-shadow: 0 0 5px 5px black;
 }
 .contenidoSecundario p{
     padding: 25px;
     width: 400px;
-    height: 250px;
+    height: 270px;
     font-size: 1.3rem;
     line-height: 2;
-    display: inline-block;
+    /* display: inline-block; */
     text-align: justify;
     border: 2px solid gold;
     box-shadow: 0 0 5px 5px black;
 }
 
-/* about us */
-main{
-    margin-bottom: 50px;
-}
 
-.itemsContainer{
-    width: 80vw;
-    margin-left: 15vw;
-    margin-bottom: 25px;
-    position: relative;
+
+
+/* ABOUT */
+.titleAbout, .subtitleAbout{
+    text-align: center;
+    color: rgb(52, 73, 66);
+    margin: 30px;
 }
-.itemsContainer figure{
-    display: inline-block;
+.blockContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vw;
+}
+.itemsContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+
 }
 .itemsContainer img{
     width: 350px;
     box-shadow: -10px 10px 10px 8px black;
     
 }
+.itemsContainer aside p{
+    border: 2px solid gold;
+    box-shadow: 0 0 5px 5px black;
+    height: 230px;
+    text-align: center;
+    padding: 25px;
+}
 .itemsContainer aside{
-    display: inline-block;
     width: 400px;
     font-size: 1.3rem;
     line-height: 2;
-    position: absolute;
-    right: 10vw;
-    padding: 20px;
-}
-.itemsContainer aside p{
-    margin-top: 30px;
-    border: 2px solid gold;
-    box-shadow: 0 0 5px 5px black;
-    height: 180px;
 }
 
-/* contact */
-
-.mainContact{
-    width: 80vw;
+/* CONTACT */
+.headerContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headerContact h1, h2{
     text-align: center;
-    margin-left: 10vw;
+    margin: 20px;
 }
-.mainContact figure img{
-    width: 100%;
+.headerContact h1{
+    color: rgb(52, 73, 66);
+    font-size: 2.5rem;
+}
+.imgContainer img{
+    width: 70vw;
     box-shadow: 0 0 5px 5px black;
 }
 .parrafos{
-    height: 110px;
     text-align: center;
-    margin-top: 30px;
-    font-size: 1.5rem;
+    margin: 30px;
+    font-size: 2vw;
+    font-style: oblique;
+    font-weight: bold;
+    width: 70vw;
 }
-footer{
-    position: relative;
-    font-size: 1.3rem;
+.contactDate{
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 10vw;
 }
-.email{
-    position: absolute;
-    left: 0;
-}
-.phone{
-    position: absolute;
-    right: 0;
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .email a,.phone a{
     text-decoration: none;
+    font-size: 2vw;
 }
 .email a:hover,.phone a:hover{
     color: black;
     text-shadow: 0 0 5px blue;
 }
+
+
+
+
+/* TASK 3 SCHEDULE */
+.headerSchedule{
+    display: flex;
+    justify-content: center;
+}
+.headerSchedule .headerContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px;
+}
+.titleSchedule{
+    color: rgb(52, 73, 66);
+    font-size: 2.5rem;
+}
+.table, th, td{
+    border: 3px solid rgb(40, 54, 50);
+    padding: 20px;
+    font-size: 1.4rem;
+    border-collapse: collapse;
+    text-align: center;
+}
+.table th{
+    padding: 35px;
+    background-color: #abf5dc;
+}
+.table{
+    box-shadow: 0 0 9px black;
+}
+.tableContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vw;
+}
+
+/* LISTAS  */
+.titleTips{
+    margin: 35px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(40, 54, 50);
+}
+.mainTips{
+    display: flex;
+    flex-direction: column;
+}
+.tipsContainer{
+    display: flex;
+    justify-content: space-evenly;
+    height: 30vw;
+    align-items: center;
+}
+.imgTips img{
+    width: 30vw;
+    box-shadow: -10px 10px 10px 8px black;
+}
+.list{
+    /* background-color: yellow; */
+    width: 30vw;
+    list-style-position: inside;
+    font-size: 1.4vw;
+    line-height: 1.5;
+    height: 18vw;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid gold;
+    box-shadow: 0 0 5px 5px black;
+    
+}
+.list>li{
+    list-style-position: inside;
+}
+.listLetters>li{
+    list-style-position: inside;
+    list-style-type: lower-alpha;
+    margin-left: 15px;
+}
+

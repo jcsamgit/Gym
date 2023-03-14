@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    height: 90px;
+    background-color: rgb(52, 73, 66);
+    position: relative;
+
+}
+.logoContent{
+    display: inline;
+    background-color: #abf5dc;
+    margin: 15px;
+    position: absolute;
+    right: 0;
+}
+.logoContent img{
+    height: 60px;
+    box-shadow: 0 0 10px 5px white;
+}
+.linksContent{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+
+}
+.linksContent a{
+    text-decoration: none;
+    text-align: center;
+    color: #abf5dc;
+    text-shadow: 0 0 10px silver;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 21px;
+    position: relative;
+    top: 55%;
+}
+.linksContent a:hover{
+    color: rgb(40, 54, 50);
+    text-shadow: 0 0 5px white;
+
+}
+
+/* hasta aca el navbar */
+
+/* boton de about us para usar en estilo 2*/
+#boton{
+    display: none;
+}
+/* -------------------- */
+body{
+    background-color: #def8f0;
+}
+
+/* home */
+main{
+    margin-top: 20px;
+}
+.tituloPrincipal, h2{
+    text-align: center;
+    margin: 35px;
+    color: rgb(52, 73, 66);
+
+}
+h2{
+    color: black;
+}
+.tituloPrincipal{
+    font-size: 2.5rem;
+
+}
+.imagenPrincipal{
+    text-align: center;
+}
+.imagenPrincipal img{
+    width: 80vw;
+    box-shadow: 0 0 5px 5px black;
+}
+.contenidoSecundario{
+    margin: 10vw;
+    position: relative;
+}
+.contenidoSecundario aside{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    
+}
+.contenidoSecundario img{
+    display: inline-block;
+    width: 400px;
+    box-shadow: 0 0 5px 5px black;
+}
+.contenidoSecundario p{
+    padding: 25px;
+    width: 400px;
+    height: 250px;
+    font-size: 1.3rem;
+    line-height: 2;
+    display: inline-block;
+    text-align: justify;
+    border: 2px solid gold;
+    box-shadow: 0 0 5px 5px black;
+}
+
+/* about us */
+main{
+    margin-bottom: 50px;
+}
+
+.itemsContainer{
+    width: 80vw;
+    margin-left: 15vw;
+    margin-bottom: 25px;
+    position: relative;
+}
+.itemsContainer figure{
+    display: inline-block;
+}
+.itemsContainer img{
+    width: 350px;
+    box-shadow: -10px 10px 10px 8px black;
+    
+}
+.itemsContainer aside{
+    display: inline-block;
+    width: 400px;
+    font-size: 1.3rem;
+    line-height: 2;
+    position: absolute;
+    right: 10vw;
+    padding: 20px;
+}
+.itemsContainer aside p{
+    margin-top: 30px;
+    border: 2px solid gold;
+    box-shadow: 0 0 5px 5px black;
+    height: 180px;
+}
+
+/* contact */
+
+.mainContact{
+    width: 80vw;
+    text-align: center;
+    margin-left: 10vw;
+}
+.mainContact figure img{
+    width: 100%;
+    box-shadow: 0 0 5px 5px black;
+}
+.parrafos{
+    height: 110px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+footer{
+    position: relative;
+    font-size: 1.3rem;
+}
+.email{
+    position: absolute;
+    left: 0;
+}
+.phone{
+    position: absolute;
+    right: 0;
+}
+.email a,.phone a{
+    text-decoration: none;
+}
+.email a:hover,.phone a:hover{
+    color: black;
+    text-shadow: 0 0 5px blue;
+}
