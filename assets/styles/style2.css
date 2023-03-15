@@ -24,6 +24,9 @@ nav{
     animation-duration: 6s;
     animation-delay: 1s;
 }
+.logoContent img:hover{
+    cursor: pointer;
+}
 .linksContent{
     display: flex;
     align-items: center;

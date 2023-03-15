@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olympus Gym | Contact</title>
+    <title>Olympus Gym - Contact</title>
     <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css" id="styles">
     <!-- <link rel="stylesheet" href="../styles/style2.css"> -->
 </head>
 <body class="bodyContact">
@@ -21,7 +21,7 @@
             <a href="./tips.html">Benefits and tips</a>
         </div>
         <figure class="logoContent">
-            <img src="../images/logo.png" alt="Logo">
+            <img src="../images/logo.png" alt="Logo" id="switchStyle" onclick="switchStyle()">
         </figure>
         
     </nav>
@@ -31,7 +31,7 @@
             <h1 class="tituloPrincipal titleContact">Contact</h1>
             <h2 class="subtitleContact">Do not hesitate to contact us</h2>
             <figure class="imgContainer">
-                <img src="../images/image-1.jpg" alt="">
+                <img src="../images/image-1.jpg" alt="imagen de un gimnasio lleno de herramientas para hacer ejercicio">
             </figure>
         </div>
     </header>
@@ -59,5 +59,28 @@
             </footer>
         </div>
     </main>
+
+
+    <script>
+        const logoGym= document.querySelector("#switchStyle")
+        const linkTag=document.getElementById("styles");
+        var num=0
+        logoGym.addEventListener("click", e=>{
+            if(num%2){
+                linkTag.href = "../styles/style2.css"
+                console.log("AHORA ESTAS EN EL ESTILO 2")
+            }else {
+                linkTag.href = "../styles/style.css"
+                console.log("AHORA ESTAS EN EL ESTILO 1")
+            }
+        })
+        function switchStyle(){
+            console.log("CAMBIASTE DE ESTILO")
+            num+=1
+
+
+        }
+
+    </script>
     </body>
 </html>

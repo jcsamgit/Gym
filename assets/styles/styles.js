@@ -1,36 +1,22 @@
-// html a incorporar para el renderizado:
-    // <button id="tema" onclick="cambiarTexto()">modo noche</button>
+    // <!-- cambiar estilo -->
 
-
-
-    // <!-- modo dia/noche -->
-
-    const temaOscuro= document.querySelector("#styles")
-    const body= document.querySelector("body")
-    load();
-    temaOscuro.addEventListener("click", e=>{
-        body.classList.toggle("modoNoche")
-        store(body.classList.contains("modoNoche"));
-    })
-    // cambiar texto del boton
-    function cambiarEstilo(){
-        // if(temaOscuro.innerHTML=="modo noche"){
-        //     temaOscuro.innerHTML="modo dia"
-        // }else{
-        //     temaOscuro.innerHTML="modo noche"
-        // }
-        alert("hola")
-    }
-
-    function load(){
-        const modoNoche= localStorage.getItem("modoNoche")
-        if(!modoNoche){
-            store("false")
-        }else if(modoNoche=="true"){
-            body.classList.add("modoNoche")
+    const logoGym= document.querySelector("#switchStyle")
+    const linkTag=document.getElementById("styles");
+    var num=0
+    logoGym.addEventListener("click", e=>{
+        if(num%2){
+            linkTag.href = "../styles/style2.css"
+            console.log("AHORA ESTAS EN EL ESTILO 2")
+        }else {
+            linkTag.href = "../styles/style.css"
+            console.log("AHORA ESTAS EN EL ESTILO 1")
         }
+    })
+    function switchStyle(){
+        console.log("CAMBIASTE DE ESTILO")
+        num+=1
+
+
     }
-    function store(value){
-        localStorage.setItem("modoNoche",value)
-    }
+
     

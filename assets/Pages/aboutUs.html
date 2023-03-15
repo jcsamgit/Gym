@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olympus Gym - About us</title>
     <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css" id="styles">
     <!-- <link rel="stylesheet" href="../styles/style2.css"> -->
 </head>
 <body>
@@ -21,7 +21,7 @@
                 <a href="./tips.html">Benefits and tips</a>
             </div>
             <figure class="logoContent">
-                <img src="../images/logo.png" alt="Logo">
+                <img src="../images/logo.png" alt="Logo" id="switchStyle" onclick="switchStyle()">
             </figure>
 
         </nav>
@@ -35,7 +35,7 @@
 
                 <div class="itemsContainer">
                     <figure>
-                        <img src="../images/image.jpg" alt="">
+                        <img src="../images/image.jpg" alt="imagen de una pesa grande de gimnasio">
                     </figure>
                     <aside>
                         <p>
@@ -47,7 +47,7 @@
                 <div class="itemsContainer">
                     
                     <figure>
-                        <img src="../images/image-2.jpg" alt="">
+                        <img src="../images/image-2.jpg" alt="imagen de una persona haciendo ejercicio con las piernas">
                     </figure>
                     <aside>
                         <p>
@@ -58,7 +58,7 @@
                 
                 <div class="itemsContainer">
                     <figure>
-                        <img src="../images/image-3.jpg" alt="">
+                        <img src="../images/image-3.jpg" alt="imagen de dos personas haciendo ejercicio de elongacion en un ginmasio">
                     </figure>
                     <aside>
                         <p>
@@ -69,5 +69,29 @@
             </div>
             </section>
     </main>
+
+
+    <script>
+        const logoGym= document.querySelector("#switchStyle")
+        const linkTag=document.getElementById("styles");
+        var num=0
+        logoGym.addEventListener("click", e=>{
+            if(num%2){
+                linkTag.href = "../styles/style2.css"
+                console.log("AHORA ESTAS EN EL ESTILO 2")
+            }else {
+                linkTag.href = "../styles/style.css"
+                console.log("AHORA ESTAS EN EL ESTILO 1")
+            }
+        })
+        function switchStyle(){
+            console.log("CAMBIASTE DE ESTILO")
+            num+=1
+
+
+        }
+
+    </script>
 </body>
+
 </html>
