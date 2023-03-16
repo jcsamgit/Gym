@@ -6,7 +6,8 @@
 
 nav{
     height: 90px;
-    background-color: rgb(52, 73, 66);
+    background: rgb(56,94,81);
+    background: radial-gradient(circle, rgba(56,94,81,0.938813025210084) 28%, rgba(52,73,66,1) 47%, rgba(12,14,14,1) 89%);
     display: flex;
     justify-content: space-between;
 }
@@ -14,14 +15,16 @@ nav{
     margin: 15px;
 }
 @keyframes logoIntermitente{
-    50%{background-color: #abf5dc;}
+    0%{background-color: black;}
+    50%{background-color: #abf5dc; }
+    100%{background-color: black;}
 }
 .logoContent img{
     height: 60px;
     box-shadow: 0 0 10px 5px white;
     animation-name: logoIntermitente;
     animation-iteration-count: infinite;
-    animation-duration: 6s;
+    animation-duration: 8s;
     animation-delay: 1s;
 }
 .logoContent img:hover{
@@ -141,13 +144,13 @@ body{
     display: inline-block;
     height: 35vw;
 }
-.itemsContainer aside{
+.itemsContainer div{
     margin-top: 25px;
     font-size: 1.3rem;
     line-height: 1.4;
     height: 10vw;
 }
-.itemsContainer aside p{
+.itemsContainer div p{
     overflow: hidden;
     height: 20vw;
     text-shadow: 0 0 9px blue
@@ -226,6 +229,10 @@ body{
     
     text-decoration: none;
 
+}
+.email a,.phone a{
+    color: darkcyan;
+    text-shadow: 0 0 1px black;
 }
 .email a:hover,.phone a:hover{
     color: black;

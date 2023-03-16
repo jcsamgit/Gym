@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympus Gym - Raffle</title>
+    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css" id="styles">
+</head>
+<body>
+    <nav>
+        <div class="linksContent">
+            
+            <a href="../../index.html">Home</a>
+            <a href="./aboutUs.html">About us</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./schedule.html">Schedule</a>
+            <a href="./tips.html">Benefits and tips</a>
+            <a href="#">Raffle</a>
+        </div>
+        <figure class="logoContent">
+            <img src="../images/logo.png" alt="Logo">
+        </figure>
+        
+    </nav>
+    <header>
+        <h1 class="titleRaffle">Raffle</h1>
+        <h2 class="subtitleRaffle">Every month in this section you can participate in a raffle.</h2>
+        
+    </header>
+
+    <main class="mainRaffle">
+        <div class="imgContainerRaffle">
+            <figure>
+                <img src="../images/together.jpg" alt="" width="400px">
+            </figure>
+            <figure>
+                <img src="../images/gym-1.jpg" alt="" width="400px">
+            </figure>
+        </div>
+
+        <form action="./show_data.html" method="get" class="formRaffle">
+            <h3>PARTICIPATE IN OUR RAFFLE FOR A MONTH OF PERSONALIZED TRAINING.</h3>
+
+            <label for="fname">First Name <br>
+                <input type="text" name="name" id="fname">
+            </label>
+            <label for="lname">Last Name <br>
+                <input type="text" name="last-name" id="lname">
+            </label>
+            <label for="email">Email <br>
+                <input type="email" id="email">
+            </label>
+            <label for="genderSelect" class="gender">Choose Your Gender: <br>
+                <select name="gender" id="genderSelect">
+                    <option value="">choose an option</option>
+                    <option value="masculine">masculine</option>
+                    <option value="femenine">femenine</option>
+                    <option value="other">other</option>
+                </select>
+            </label>
+            <label for="countrySelect">Country: <br>
+                <select name="country" id="countrySelect">
+                    <option value="">choose an option</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="chile">Chile</option>
+                    <option value="colombia">Colombia</option>
+                </select>
+            </label>
+            <div>
+
+                <h4>Payment Options:</h4>
+                <input type="radio" id="cash" name="payment" value="cash" checked>
+                <label for="cash">Cash</label>
+
+                <input type="radio" id="creditCards" name="payment" value="credit">
+                <label for="creditCards">Credit Cards</label>
+
+                <input type="radio" id="debitCards" name="payment" value="debit">
+                <label for="debitCards">Debit Cards</label>
+
+            </div>
+            
+            <h4>Services</h4>
+            <label for="services">
+                <!-- <input type=""> -->
+                <textarea cols="30" rows="10" name="services" aria-valuemax="5" maxlength="100" placeholder="write the services that you want"></textarea>
+            </label>
+            <div>
+                <input type="checkbox" name="terms" id="terms" value="yes" required>
+                <label for="terms"> I accept terms and conditions...</label>
+            </div>
+
+            <input type="submit" value="submit">
+        </form>
+    </main>
+    <footer class="footerRaffle">
+        <p>MAPA</p>
+    </footer>
+</body>
+</html>

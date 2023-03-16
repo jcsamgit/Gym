@@ -6,7 +6,9 @@
 
 nav{
     height: 90px;
-    background-color: rgb(52, 73, 66);
+    /* background-color: rgb(52, 73, 66); */
+    background: rgb(56,94,81);
+    background: radial-gradient(circle, rgba(56,94,81,0.938813025210084) 28%, rgba(52,73,66,1) 47%, rgba(12,14,14,1) 89%);
     display: flex;
     justify-content: space-between;
 }
@@ -14,14 +16,16 @@ nav{
     margin: 15px;
 }
 @keyframes logoIntermitente{
-    50%{background-color: #abf5dc;}
+    0%{background-color: black;}
+    50%{background-color: #abf5dc; }
+    100%{background-color: black;}
 }
 .logoContent img{
     height: 60px;
     box-shadow: 0 0 10px 5px white;
     animation-name: logoIntermitente;
     animation-iteration-count: infinite;
-    animation-duration: 6s;
+    animation-duration: 8s;
     animation-delay: 1s;
 }
 .logoContent img:hover{
@@ -142,14 +146,14 @@ body{
     box-shadow: -10px 10px 10px 8px black;
     
 }
-.itemsContainer aside p{
+.itemsContainer div p{
     border: 2px solid gold;
     box-shadow: 0 0 5px 5px black;
     height: 230px;
     text-align: center;
     padding: 25px;
 }
-.itemsContainer aside{
+.itemsContainer div{
     width: 400px;
     font-size: 1.3rem;
     line-height: 2;
@@ -196,6 +200,8 @@ body{
 .email a,.phone a{
     text-decoration: none;
     font-size: 2vw;
+    color: darkslategray;
+    text-shadow: 0 0 3px darkcyan;
 }
 .email a:hover,.phone a:hover{
     color: black;
@@ -240,7 +246,7 @@ body{
     margin-bottom: 10vw;
 }
 
-/* LISTAS  */
+/* TIPS (LISTAS)*/
 .titleTips{
     margin: 35px;
     text-align: center;
@@ -292,3 +298,94 @@ body{
     font-weight: bold;
 
 }
+
+/* RAFFLE */
+.titleRaffle{
+    text-align: center;
+    margin: 35px;
+    color: rgb(52, 73, 66);
+}
+.subtitleRaffle{
+    font-style: oblique;
+}
+.mainRaffle{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+.formRaffle{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(173, 230, 203);
+    /* margin: 10px; */
+    /* text-align: center; */
+    /* align-items: center; */
+    overflow: hidden;
+    width: 30vw;
+    padding: 5px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px 3px black;
+}
+.formRaffle label, .formRaffle input, .formRaffle select{
+    /* background-color: yellow; */
+    margin-top: 5px;
+}
+.formRaffle h4{
+    margin: 10px 0px;
+}
+.formRaffle h3{
+    margin: 5px;
+}
+.imgContainerRaffle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.imgContainerRaffle img{
+    width: 30vw;
+}
+
+
+
+
+
+/* publicidad */
+/* @keyframes publicidad{
+    0%{visibility: visible; opacity: 0.7;}
+    50%{transform: scale(2); opacity: 0.9;}
+    75%{transform: scale(2); transition: 5s; opacity: 1; visibility: hidden;}
+}
+.publicidad{
+    width: 30vw;
+    height: 20vw;
+    background-color: #abf5dc;
+    visibility: hidden;
+    animation-name: publicidad;
+    animation-iteration-count: initial;
+    animation-duration: 20s;
+    animation-delay: 1s;
+    position: absolute;
+    top: 15vw;
+    left: 35vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 5vw;
+    border: 5px dotted red;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
