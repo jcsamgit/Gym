@@ -65,6 +65,7 @@ body{
     margin: 2.9vw;
     box-shadow: 0 0 5px black;
     background-image: url(../images/guys.jpg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -80,8 +81,8 @@ body{
     box-shadow: 1px 1px 9px 1px white;
     font-size: 1.5vw;
     color: #abf5dc;
-    margin: 10px;
     font-weight: bold;
+    margin: 10px;
 }
 #boton:hover{
     background-color: #abf5dc;
@@ -89,7 +90,6 @@ body{
 
 }
 .mainTitle2{
-    width: 30vw;
     text-align: center;
     text-shadow: 0 0 8px white;
     font-size: 3vw;
@@ -98,17 +98,16 @@ body{
 .subtitle2{
     margin: 5px;
     text-align: center;
-    width: 20vw;
     font-size: 2vw;
     text-shadow: 0 0 8px white;
 }
-
+.main{
+    display: flex;
+    justify-content: center;
+}
 .contenidoSecundario{
     width: 30vw;
     height:20vw ;
-    background-image: url(../images/dumbbells.jpg);
-    background-size: contain;
-    margin-left: 35vw;
     margin-bottom: 60px;
     box-shadow: 0 0 5px 5px black;
 }
@@ -116,6 +115,8 @@ body{
     display: none;
 }
 .contenidoSecundario p{
+    background-size: cover;
+    background-image: url(../images/dumbbells.jpg);
     text-align: center;
     height: 100%;
     padding: 5vw;
@@ -137,26 +138,29 @@ body{
 }
 .blockContainer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .itemsContainer{
+    margin-top: 30px;
     width: 25vw;
-    display: inline-block;
-    height: 35vw;
+    min-width: 250px;
 }
 .itemsContainer div{
     margin-top: 25px;
     font-size: 1.3rem;
     line-height: 1.4;
-    height: 10vw;
 }
 .itemsContainer div p{
     overflow: hidden;
-    height: 20vw;
+    font-size: 1.9vw;
+    width: 25vw;
+    min-width: 200px;
     text-shadow: 0 0 9px blue
 }
 .itemsContainer figure img{
     width: 25vw;
+    min-width: 200px;
     box-shadow: 0 0 5px 5px black;
 }
 
@@ -173,6 +177,8 @@ body{
 .headerContainer{
     background-image: url(../images/image-1.jpg);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 80vw;
     height: 30vw;
     display: flex;
@@ -192,10 +198,8 @@ body{
 
 }
 .mainContainer{
-    /* background-color: yellow; */
     height: 25vw;
     width: 80vw;
-    /* margin: 5vw 10vw 5vw 10vw; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -204,23 +208,23 @@ body{
 .parrafos{
     line-height: 1.5;
     padding: 25px;
-    height: 200px;
-    width: 350px;
-    font-size: 1.4rem;
+    height: 20vw;
+    width: 35vw;
+    font-size: 2vw;
     font-weight: bold;
     border: 2px solid gold;
     box-shadow: 0 0 5px 5px black;
     text-align: center;
 }
 .contactDate{
-    height: 200px;
-    width: 350px;
+    height: 20vw;
+    width: 35vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 2vw;
     text-align: center;
     border: 2px solid gold;
     box-shadow: 0 0 5px 5px black;
@@ -237,4 +241,85 @@ body{
 .email a:hover,.phone a:hover{
     color: black;
     text-shadow: 0 0 5px blue;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+    nav{
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 100%;
+    }
+    .linksContent{
+        flex-direction: column;
+    }
+    /* hasta aca el navbar */
+    .headerStyle2{
+        display: flex;
+        justify-content: center;
+    }
+    .mainTitle2{
+        font-size: 25px;
+    }
+    .subtitle2{
+        font-size: 15px;
+    }
+    #boton{
+        font-size: 10px;
+        min-width: 50px;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenidoSecundario p {
+        padding: 15px;
+        margin: 0;
+        font-size: 15px;
+        background-repeat: no-repeat;
+    }
+    .contenidoSecundario{
+        width: 220px;
+        height: 150px;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+
+    /* about */
+    .itemsContainer div p{
+        font-size: 13px;
+    }
+    .mainAbout{
+        margin-bottom: 40px;
+    }
+
+    /* CONTACT */
+    .titleContact{
+        font-size: 25px;
+    }
+    .subtitleContact{
+        font-size: 15px;
+    }
+    .headerContact{
+        margin-bottom: 20px;
+    }
+    .mainContainer{
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        height: auto;
+    }
+    .parrafos, .contactDate{
+        width: 200px;
+        height: 120px;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    
+
+
+
+
 }
