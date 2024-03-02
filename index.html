@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olympus Gym - Home</title>
     <link rel="shortcut icon" href="./assets/images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/styles/style.css" id="styles">
+    <link rel="stylesheet" href="./assets/styles/style2.css" id="styles">
 
 </head>
 <body>
     <nav>
+        <div id="drawer">
+            <span class="barras"></span>
+            <span class="barras"></span>
+            <span class="barras"></span>
+        </div>
         <div class="linksContent">
-
                 <a href="#">Home</a>
                 <a href="./assets/Pages/aboutUs.html">About us</a>
                 <a href="./assets/Pages/contact.html">Contact</a>
@@ -64,10 +68,10 @@
         var num=0
         logoGym.addEventListener("click", e=>{
             if(num%2){
-                linkTag.href = "./assets/styles/style2.css"
+                linkTag.href = "./assets/styles/style.css"
                 console.log("AHORA ESTAS EN EL ESTILO 2")
             }else {
-                linkTag.href = "./assets/styles/style.css"
+                linkTag.href = "./assets/styles/style2.css"
                 console.log("AHORA ESTAS EN EL ESTILO 1")
             }
         })
@@ -76,5 +80,6 @@
             num+=1
         }
     </script>
+    <script src="./assets/js/nav.js"></script>
 </body>
 </html>
