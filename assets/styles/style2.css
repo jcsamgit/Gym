@@ -278,7 +278,7 @@ body{
         flex-direction: column;
         width: 30px;
         position: absolute;
-        left: 10px;
+        left: 15px;
         color: white;
         padding-bottom: 10px;
         cursor: pointer;
@@ -287,6 +287,7 @@ body{
     .desplegar{
         transform: translateX(0);
         transition: 1.5s;
+        height: 90vh;
     }
     .barras{
         display: block;
@@ -367,7 +368,7 @@ body{
         }
       
         100% {
-            bottom: .5rem;
+            bottom: .51rem;
             transform: rotate(135deg);
         }
       }
@@ -425,7 +426,9 @@ body{
     }
     #boton{
         font-size: 10px;
-        min-width: 50px;
+        min-width: 60px;
+        padding: 3px;
+        text-wrap: nowrap;
     }
     .main{
         display: flex;
@@ -435,13 +438,15 @@ body{
     .contenidoSecundario p {
         padding: 15px;
         margin: 0;
-        font-size: 15px;
+        font-size: 14px;
+        overflow: hidden;
         background-repeat: no-repeat;
     }
     .contenidoSecundario{
         width: 220px;
         height: 150px;
         margin: 0;
+        margin-top: 25px;
         margin-bottom: 25px;
     }
 

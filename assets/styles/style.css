@@ -385,10 +385,14 @@ body{
 .btnSubmit{
     text-align: center;
     width: 20vw;
+    margin-bottom: 20px;
     
 }
 .footerRaffle{
+    display: none;
     height: 200px;
+    /* display: flex;
+    justify-content: center; */
     background-color: rgba(56,94,81,0.938813025210084);
 }
 .map{
